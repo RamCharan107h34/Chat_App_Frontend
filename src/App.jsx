@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import {createBrowserRouter,RouterProvider} from "react-router";
-import Home from "./components/home";
+import Home from "./components/Home";
 import RootLayout from "./components/RootLayout";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import ChatWindow from "./components/ChatWindow";
-import UserProfile from "./components/userProfile";
+import UserProfile from "./components/UserProfile";
 import EditProfile from "./components/EditProfile";
 import ChatList from "./components/ChatList";
 import Chat from "./components/Chat";
