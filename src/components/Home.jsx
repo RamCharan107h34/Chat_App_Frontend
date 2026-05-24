@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { useNavigate } from 'react-router'
 import ChannelsImage from '../assets/Channel-Image.jpeg' 
-import DirectMessagesImage from '../assets/Direct-Messages-Image.jpeg'
+import DirectMessagesImage from '../assets/directMessagesImg.png'
 
 function Home() {
   const navigate = useNavigate()
