@@ -80,14 +80,22 @@ function MessageContainer({
 
           {/* REACT */}
           <Popup trigger={<button className="p-2 rounded-lg hover:bg-[#232734] transition"><SmilePlus size={16} /></button>} position="bottom center">
-            <div className="flex flex-wrap gap-2 p-3 bg-[#171A22] border border-[#2A2F3A] rounded-xl">
-              {emojis.map((e, i) => (
-                <button key={i} onClick={() => addReaction(message._id, e)} className="text-2xl hover:scale-125">
-                  {e}
-                </button>
-              ))}
-            </div>
-          </Popup>
+  <div className="bg-[#171A22] border border-[#2A2F3A] rounded-xl overflow-hidden w-56">
+    <div className="overflow-y-auto max-h-48 p-2">
+      <div className="grid grid-cols-6 gap-1">
+        {emojis.map((e, i) => (
+          <button
+            key={i}
+            onClick={() => addReaction(message._id, e)}
+            className="text-2xl p-1 rounded-lg hover:bg-[#232734] hover:scale-125 transition-transform"
+          >
+            {e}
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+</Popup>
 
           {/* THREAD */}
           <button onClick={(e) => { e.stopPropagation(); openThread(message); }} className="p-2 rounded-lg hover:bg-[#232734] transition">
