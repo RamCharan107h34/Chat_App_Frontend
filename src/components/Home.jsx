@@ -2,6 +2,10 @@ import React, { useRef } from 'react'
 import { useNavigate } from 'react-router'
 import ChannelsImage from '../assets/Channel-Image.jpeg' 
 import DirectMessagesImage from '../assets/directMessagesImg.png'
+import FileSharingImage from '../assets/file-sharing.png'
+import ReactionsImage from '../assets/reactions.png'
+import MessageEditingImage from '../assets/message-editing.png'
+import ThreadRepliesImage from '../assets/thread-replies.png'
 
 function Home() {
   const navigate = useNavigate()
@@ -128,10 +132,8 @@ function Home() {
               </p>
             </div>
 
-            <div className="shrink-0 w-96 h-72 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl flex items-center justify-center shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
-              <span className="text-[#11A8E8] font-bold text-lg">
-                File Sharing Image
-              </span>
+            <div className="shrink-0 w-96 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
+              <img src={FileSharingImage} alt="File Sharing" className="w-full h-auto" />
             </div>
 
           </div>
@@ -149,10 +151,8 @@ function Home() {
               </p>
             </div>
 
-            <div className="shrink-0 w-96 h-72 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl flex items-center justify-center shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
-              <span className="text-[#11A8E8] font-bold text-lg">
-                Reactions Image
-              </span>
+            <div className="shrink-0 w-96 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
+              <img src={ReactionsImage} alt="Message Reactions" className="w-full h-auto" />
             </div>
 
           </div>
@@ -170,10 +170,8 @@ function Home() {
               </p>
             </div>
 
-            <div className="shrink-0 w-96 h-72 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl flex items-center justify-center shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
-              <span className="text-[#11A8E8] font-bold text-lg">
-                Message Editing Image
-              </span>
+            <div className="shrink-0 w-96 h-72 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
+              <img src={MessageEditingImage} alt="Message Editing" className="w-full h-auto" />
             </div>
 
           </div>
@@ -191,10 +189,8 @@ function Home() {
               </p>
             </div>
 
-            <div className="shrink-0 w-96 h-72 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl flex items-center justify-center shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
-              <span className="text-[#11A8E8] font-bold text-lg">
-                Thread Replies Image
-              </span>
+            <div className="shrink-0 w-96 h-72 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
+              <img src={ThreadRepliesImage} alt="Thread Replies" className="w-full h-auto" />
             </div>
 
           </div>
