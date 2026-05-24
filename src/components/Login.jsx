@@ -55,7 +55,7 @@ function Login() {
         // Update auth state with user data from backend
         useAuth.getState().setGoogleAuth({
           _id: res.data.user?._id,
-          name: res.data.user?.name,
+          username: res.data.user?.username,   // ← to this
           email: res.data.user?.email,
           profileImageUrl: res.data.user?.profileImageUrl,
         });
