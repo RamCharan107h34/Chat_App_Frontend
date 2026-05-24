@@ -90,7 +90,7 @@ function Home() {
             </div>
 
             <div className="shrink-0 w-96 h-72 bg-[#0d0d0d] border border-[#1f1f1f] rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(17,168,232,0.12)] hover:border-[#11A8E8]/40 transition-all duration-300">
-              <img src={channelsImg} alt="Channels" className="w-full h-full object-cover object-center" />
+              <img src={ChannelsImage} alt="Channels" className="w-full h-full object-cover object-center" />
             </div>
 
           </div>
